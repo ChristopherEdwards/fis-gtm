@@ -1,5 +1,5 @@
 #!/bin/bash
-setup-x86_64.exe -q -P wget -P gcc-g++ -P make -P cmake -P libelf-devel -P zlib-devel -P libicu-devel -P libgpgme-devel -P libgpg-error-devel -P libgcrypt-devel -P openssl-devel -P tcsh -P libncurses-devel
+setup-x86_64.exe -q -P wget -P gcc-g++ -P make -P cmake -P libelf-devel -P zlib-devel -P libicu-devel -P libgpgme-devel -P libgpg-error-devel -P libgcrypt-devel -P openssl-devel -P tcsh -P libncurses-devel -P libcrypt-devel
 mklink /d "c:\cygwin64\home\vagrant\vagrant" "\\vboxsvr\vagrant"
 cd ~
 wget http://www.hyperrealm.com/libconfig/libconfig-1.5.tar.gz
