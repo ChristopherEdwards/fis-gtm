@@ -32,11 +32,11 @@
 	.text
 .extern	mdb_condition_handler
 .extern	op_unwind
-.extern __sigsetjmp
+.extern setjmp
+#.extern __sigsetjmp
 #       setjmp is really __sigsetjmp(env,0)
 
-
-#	.type dm_start,@function
+	#.type dm_start,@function
 ENTRY dm_start
 	enter	$SUPER_STACK_SIZE,$0   # Ensure that the stack is 16 bytes aligned
 	save_callee_saved

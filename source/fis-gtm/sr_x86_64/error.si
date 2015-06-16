@@ -37,7 +37,8 @@ chnd_jmp	=	24
 	addq	$chnd_jmp,%rax			# setjmp(ctxt->jmp)
 	movq	$0,%rsi
 	movq	%rax,%rdi
-	call 	__sigsetjmp@PLT
+	#call 	__sigsetjmp@PLT
+	call	setjmp@PLT
 	incl  	%eax
 	jne  	\label
 	REVERT
